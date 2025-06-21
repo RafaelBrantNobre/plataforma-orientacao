@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plataforma de Orientação Acadêmica - Unimontes</title>
+    <meta name="description" content="Plataforma digital para orientação acadêmica sobre procedimentos, normas e regulamentos universitários">
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Botpress -->
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
+  </head>
+
+  <body>
+    <!-- Este é o container da sua aplicação React -->
+    <div id="root"></div>
+
+    <!-- Aqui adicionamos o container do chatbot -->
+    <div id="webchat-container" style="width: 100%; max-width: 600px; height: 600px; margin: 20px auto;"></div>
+
+    <!-- Script da sua aplicação React -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Script do Botpress Webchat -->
+    <script>
+      window.botpress.init({
+        "botId": "10c9bfa5-ec4a-480d-a8ad-4669865640ae",
+        "clientId": "62b268c0-d235-4144-89c3-c1e0c26a694f",
+        "selector": "#webchat-container"
+      });
+    </script>
+  </body>
+</html>
